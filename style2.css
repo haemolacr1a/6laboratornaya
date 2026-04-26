@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.v-nav {
+    width: 180px;
+    box-shadow: 4px 4px 8px #ccc;
+}
+
+.pt, .drop_item {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 12px;
+    border: 0.5px solid #ccc;
+    background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+    text-align: center;
+    font-weight: bold;
+}
+
+.drop_item {
+    text-transform: none;
+    font-weight: normal;
+    width: 160px;
+}
+
+.pt:hover, .drop_item:hover {
+    background: linear-gradient(to bottom, #dcdcdc, #bcbcbc);
+}
+
+.parent {
+    position: relative;
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 100;
+}
+
+.parent:hover > .drop {
+    display: block;
+}
+
+.drop .drop_item {
+    border-left: 3px solid #999;
+}

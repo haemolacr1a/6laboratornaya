@@ -1,0 +1,49 @@
+body { font-family: Arial, sans-serif; }
+
+.v-nav {
+    width: 200px;
+    box-shadow: 3px 3px 5px #ccc;
+}
+
+.pt {
+    display: block;
+    padding: 10px;
+    background: #eee;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pt:hover {
+    background: #ddd;
+}
+
+.item {
+    position: relative;
+}
+
+.drop {
+    display: none;
+    background: #f9f9f9;
+}
+
+.item:hover .drop {
+    display: block;
+}
+
+.drop_item {
+    display: block;
+    padding: 8px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 0.5px solid #eee;
+    text-align: center;
+}
+
+.drop_item:hover {
+    background: #f0f0f0;
+}
